@@ -31,6 +31,8 @@ html, body {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     color: var(--color-text);
     background-color: var(--color-background);
 }
