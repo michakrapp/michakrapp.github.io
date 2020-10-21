@@ -1,0 +1,55 @@
+:root {
+    /* light */
+    --color-light-text: #3f3f3f;
+    --color-light-background: #ffffff;
+
+    /* dark */
+    --color-dark-text: #ffffff;
+    --color-dark-background: #3f3f3f;
+
+    /* variables */
+    --color-text: var(--color-light-text);
+    --color-background: var(--color-light-background);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: var(--color-dark-text);
+        --color-background: var(--color-dark-background);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-text: var(--color-light-text);
+        --color-background: var(--color-light-background);
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: overline;
+}
+
+.outer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    width: auto;
+}
